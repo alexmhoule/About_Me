@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+/* MY CSS */
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #D7CAB6;
+}
+
+.masthead-heading,
+.masthead-intro,
+.foot {
+  text-align: center;
+}
+
+
+.masthead {
+    padding: 6em 0;
+    background-image: url(http://i292.photobucket.com/albums/mm38/alexmhoule99/Mountain_zpsb87b70ac.jpeg);
+    background-size: cover;
+    border-top: solid 1em #FFCF33;
+    border-bottom: solid 1em #FFCF33;
+    border-radius: 5em 20em 5em;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+    color: #4A7F8F;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #A4A8A7;
+    text-shadow: 3px 3px 1px #000;
+}
+
+.foot,
+.introduction,
+.location,
+.more {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction > p,
+.location > p,
+.more > p,
+.foot > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #4A7F8F;
+}
+
+.more > h4 {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #A4A8A7;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.subtopic {
+  font-size: 32px;
+  color: #A4A8A7;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.bands {
+  list-style: none; 
+}
+
+.activites > li,
+.bands > li {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #4A7F8F;
+}
+
+.networks > li {
+  display: inline-block;
+}
+
+/* CHANGES */
+
+.masthead {
+	margin-top: 2em;
+}
+
+.introduction, .location, .more > p {
+	margin-top: 1.5em;
+}
+
+.more h4 {
+	margin-top: 2em;
+}
+
+.foot {
+	margin-top: 3em;
+	margin-bottom: 1.5em;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 500px) {
+    .masthead-heading {
+        font-size: 3em;
+    }
+    .masthead {
+        padding: 3em 0;
+    }
+}
